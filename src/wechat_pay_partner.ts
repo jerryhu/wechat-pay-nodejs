@@ -134,7 +134,7 @@ class WechatPayPartner extends WechatPayBase {
    * 微信支付订单号查询订单
    * @param params 参数
    */
-  public async QueryOrderById(params: {
+  public async queryOrderById(params: {
     sub_mchid: string, // 子商户号
     transaction_id: string, // 微信支付订单号
   }): Promise<ApiResult<QueryOrderPartnerResult>>{

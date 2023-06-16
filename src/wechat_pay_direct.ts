@@ -124,7 +124,7 @@ class WechatPayDirect extends WechatPayBase {
    * 微信支付订单号查询订单
    * @param transaction_id 微信支付订单号
    */
-  public async QueryOrderById(transaction_id: string): Promise<ApiResult<QueryOrderResult>>{
+  public async queryOrderById(transaction_id: string): Promise<ApiResult<QueryOrderResult>>{
     let apiUrl = '/v3/pay/transactions/id/{transaction_id}'.replace('{transaction_id}', transaction_id);
   
     const queryObj = {
