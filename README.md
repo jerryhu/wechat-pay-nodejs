@@ -131,6 +131,7 @@ const decryptedDataText = wechatPay.decryptAesGcm({
 ## 未实现的接口
 * 部分未实现的接口，可以调用SDK中的**callApi**方法来实现。具体参考以下示例
 ```typescript
+import { objToQueryString } from "wechat-pay-nodejs/lib/utils";
 
 /**
  * 分账结果
