@@ -18,7 +18,6 @@
     "strictNullChecks": false,
     "outDir": "lib",
     "declaration": true,
-    // "declarationDir": "lib"
   },
   "include": ["src/**/*", "typings/**/*"],
   "exclude": ["node_modules", "lib"]
