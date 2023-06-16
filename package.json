@@ -1,16 +1,20 @@
 {
   "name": "wechat-pay-nodejs",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "微信支付 V3 NodeJS SDK",
   "engines": {
     "node": ">=16"
   },
-  "types": "./dist/typings/index.d.ts",
-  "typings": "./dist/typings/index.d.ts",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "typings"
+  ],
   "scripts": {
-    "build": "rm -rf ./dist && tsc -p tsconfig.json && cp -r typings dist",
-    "lint": "eslint . --ext .ts --ext .mts"
+    "build": "rm -rf ./lib && tsc -p tsconfig.json",
+    "lint": "eslint . --ext .ts --ext .mts",
+    "prepublishOnly": "rm -rf ./lib && tsc -p tsconfig.json"
   },
   "devDependencies": {
     "@types/node": "^20.2.5",

@@ -16,10 +16,10 @@
     "noImplicitAny": false,
     "noImplicitThis": false,
     "strictNullChecks": false,
-    "outDir": "dist",
+    "outDir": "lib",
     "declaration": true,
-    "declarationDir": "dist"
+    // "declarationDir": "lib"
   },
-  "include": ["lib/**/*", "index.ts", "typings/index.d.ts"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*", "typings/**/*"],
+  "exclude": ["node_modules", "lib"]
 }
