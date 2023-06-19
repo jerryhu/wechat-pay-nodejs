@@ -1,5 +1,4 @@
 import x509_1 = require('@fidm/x509');
-import * as fs from 'fs'
 
 /**
  * 获取当前时间的时间戳(秒)
@@ -39,16 +38,4 @@ export const objToQueryString = (object: Record<string, string>) : string => {
     .join('&');
   if (str) str = '?' + str;
   return str || '';
-}
-
-
-/**
- * 获取版本号
- */
-export const getPackageVersion = () : string =>  {
-  const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'))
-  if(packageJson.version){
-    return packageJson.version
-  }
-  return '0.0.1';
 }

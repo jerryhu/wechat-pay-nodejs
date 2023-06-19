@@ -1,8 +1,9 @@
 import * as crypto from 'crypto'
-import { getSN, getPackageVersion, currentTimestamp, generateNonce } from "./utils";
+import { getSN, currentTimestamp, generateNonce } from "./utils";
 import { ApiResult, HttpMethod, WechatPayConfig, CertificatesResult, VerifyParams, CertificateInfo } from "../typings";
 import { apiRequest } from "./request";
 import { ResponseType } from "axios";
+import constant from "./constant";
 
 class WechatPayBase {
   public appid: string; //  服务商应用ID / 直连商户应用ID
@@ -10,7 +11,7 @@ class WechatPayBase {
   private cert_private_content: Buffer; // API证书私钥
   private cert_public_content: Buffer; // API证书公钥
   private serial_no = ''; // API证书公钥序列号
-  public user_agent = `wechat-pay-nodejs/${getPackageVersion()}`;
+  public user_agent = constant.DEFAULT_USER_AGENT;
   private auth_type = 'WECHATPAY2-SHA256-RSA2048';
 
   /**

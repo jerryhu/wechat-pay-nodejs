@@ -1,6 +1,6 @@
 {
   "name": "wechat-pay-nodejs",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "微信支付 V3 NodeJS SDK",
   "engines": {
     "node": ">=16"

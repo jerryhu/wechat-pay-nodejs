@@ -141,7 +141,7 @@ class WechatPayPartner extends WechatPayBase {
     let apiUrl = '/v3/pay/partner/transactions/id/{transaction_id}'.replace('{transaction_id}', params.transaction_id);
   
     const queryObj = {
-      mchid: this.mchid,
+      sp_mchid: this.mchid,
       sub_mchid: params.sub_mchid
     }
     // 获取接口url
@@ -162,7 +162,7 @@ class WechatPayPartner extends WechatPayBase {
     let apiUrl = '/v3/pay/partner/transactions/out-trade-no/{out_trade_no}'.replace('{out_trade_no}', params.out_trade_no);
   
     const queryObj = {
-      mchid: this.mchid,
+      sp_mchid: this.mchid,
       sub_mchid: params.sub_mchid
     }
     // 获取接口url
@@ -183,7 +183,7 @@ class WechatPayPartner extends WechatPayBase {
     const apiUrl = '/v3/pay/partner/transactions/out-trade-no/{out_trade_no}/close'.replace('{out_trade_no}', params.out_trade_no);
   
     const body = {
-      mchid: this.mchid,
+      sp_mchid: this.mchid,
       sub_mchid: params.sub_mchid
     }
   
