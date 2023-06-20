@@ -202,7 +202,7 @@ class WechatPayBase {
    * @param download_url 通过申请账单接口获取到“download_url”，URL有效期30s
    * @param responseType 响应数据的类型. 可选: 'arraybuffer', 'document', 'json', 'text', 'stream'
    */
-  public async downloadbill(download_url: string, responseType: ResponseType) : Promise<ApiResult<any>>{
+  public async downloadBill(download_url: string, responseType: ResponseType) : Promise<ApiResult<any>>{
     const urlObj = new URL(download_url);
     
     return await this.callApi({

@@ -105,7 +105,7 @@ const decryptedDataText = wechatPay.decryptAesGcm({
 | 基础支付 | 查询单笔退款API         | queryRefundByOutRefundNo |
 | 基础支付 | 申请交易账单API         | tradeBill                |
 | 基础支付 | 申请资金账单API         | fundFlowBill             |
-| 基础支付 | 下载账单API           | downloadbill             |
+| 基础支付 | 下载账单API           | downloadBill             |
 | 其他能力 | 微信支付平台证书 - 获取平台证书 | getCertificates          |
 
 ### 服务商
@@ -123,7 +123,7 @@ const decryptedDataText = wechatPay.decryptAesGcm({
 | 基础支付 | 查询单笔退款API         | queryRefundByOutRefundNo |
 | 基础支付 | 申请交易账单API         | tradeBill                |
 | 基础支付 | 申请资金账单API         | fundFlowBill             |
-| 基础支付 | 下载账单API           | downloadbill             |
+| 基础支付 | 下载账单API           | downloadBill             |
 | 基础支付 | 申请单个子商户资金账单       | subMerchantFundFlowBill  |
 | 其他能力 | 微信支付平台证书 - 获取平台证书 | getCertificates          |
 
@@ -176,3 +176,6 @@ async queryProfitSharingOrder(transactionId: string, outOrderNo: string) : Promi
 }
 ```
 * 欢迎大家通过Pull Request一起完善接口
+
+## 修改日志
+[查看修改日志](https://github.com/jerryhu/wechat-pay-nodejs/blob/main/CHANGELOG.md)
